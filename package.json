@@ -1,0 +1,19 @@
+{
+  "name": "angular2-aspnetcore-starter",
+  "version": "0.0.1",
+  "description": "Starter application using Angular 2 and ASP.NET Core",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennybiasiolli/aspnet_angular2_tests.git"
+  },
+  "author": "Denny Biasiolli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennybiasiolli/aspnet_angular2_tests/issues"
+  },
+  "homepage": "https://github.com/dennybiasiolli/aspnet_angular2_tests#readme"
+}
