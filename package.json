@@ -4,7 +4,16 @@
   "description": "Starter application using Angular 2 and ASP.NET Core",
   "main": "\"\"",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"dotnet run\"",
+    "browser:chrome": "open -a Google\\ Chrome http://localhost:5000",
+    "browser:firefox": "open -a Firefox http://localhost:5000",
+    "browser:safari": "open -a Safari http://localhost:5000",
+    "clean": "npm run clean:dotnet && npm run clean:npm",
+    "clean:dotnet": "npm run clean:bin && npm run clean:obj",
+    "clean:bin": "rm -rf bin",
+    "clean:obj": "rm -rf obj",
+    "clean:npm": "rm -rf node_modules",
+    "install": "dotnet restore",
+    "start": "tsc && concurrently \"tsc -w\" \"dotnet watch run\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
