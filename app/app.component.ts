@@ -3,6 +3,11 @@ import { Component } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'my-app',
-    template: 'Hello, Angular 2 World!',
+    template: `
+        <input type="text" [value]="food" />
+        <p>Sriracha sauce is great with {{ food }}</p>
+    `,
 })
-export class AppComponent { }
+export class AppComponent {
+    food = 'kielbasa';
+}
