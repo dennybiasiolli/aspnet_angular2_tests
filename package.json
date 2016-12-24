@@ -4,6 +4,11 @@
   "description": "Starter application using Angular 2 and ASP.NET Core",
   "main": "\"\"",
   "scripts": {
+    "clean": "npm run clean:dotnet && npm run clean:npm",
+    "clean:dotnet": "npm run clean:bin && npm run clean:obj",
+    "clean:bin": "rm -rf bin",
+    "clean:obj": "rm -rf obj",
+    "clean:npm": "rm -rf node_modules",
     "install": "dotnet restore",
     "start": "tsc && concurrently \"tsc -w\" \"dotnet run\"",
     "test": "echo \"Error: no test specified\" && exit 1"
