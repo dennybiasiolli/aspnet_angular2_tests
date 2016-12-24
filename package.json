@@ -13,7 +13,7 @@
     "clean:obj": "rm -rf obj",
     "clean:npm": "rm -rf node_modules",
     "install": "dotnet restore",
-    "start": "tsc && concurrently \"tsc -w\" \"dotnet run\"",
+    "start": "tsc && concurrently \"tsc -w\" \"dotnet watch run\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
