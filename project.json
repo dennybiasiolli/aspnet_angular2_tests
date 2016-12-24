@@ -19,5 +19,8 @@
       },
       "imports": "dnxcore50"
     }
+  },
+  "tools": {
+    "Microsoft.DotNet.Watcher.Tools": "1.1.0-*"
   }
 }
