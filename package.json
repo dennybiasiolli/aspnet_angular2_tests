@@ -4,6 +4,7 @@
   "description": "Starter application using Angular 2 and ASP.NET Core",
   "main": "\"\"",
   "scripts": {
+    "install": "dotnet restore",
     "start": "tsc && concurrently \"tsc -w\" \"dotnet run\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
