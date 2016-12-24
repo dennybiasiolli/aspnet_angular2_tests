@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `
         <nav>
-            <a href="/pairing">Pairing</a> |
-            <a href="/about">About</a>
+            <a routerLink="/pairing">Pairing</a> | 
+            <a routerLink="/about">About</a>            
         </nav>
-        <my-pairing></my-pairing>
+        <router-outlet></router-outlet>
     `,
 })
 export class AppComponent { }
